@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estúdio Vereda — Design Digital e Desenvolvimento Web</title>
+    <meta
+      name="description"
+      content="Site simples em HTML, CSS e JavaScript para o Estúdio Vereda, especializado em design digital e desenvolvimento web."
+    />
+    <meta property="og:title" content="Estúdio Vereda — Design Digital e Desenvolvimento Web" />
+    <meta
+      property="og:description"
+      content="Site simples em HTML, CSS e JavaScript para o Estúdio Vereda, especializado em design digital e desenvolvimento web."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#inicio" class="brand">Estúdio Vereda</a>
+
+        <nav class="main-nav" aria-label="Navegação principal">
+          <a href="#servicos" class="nav-link">Serviços</a>
+          <a href="#projetos" class="nav-link">Projetos</a>
+          <a href="#sobre" class="nav-link">Sobre</a>
+          <a href="#contato" class="nav-link">Contato</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#contato" class="btn btn-primary header-cta">Solicitar Orçamento</a>
+          <button
+            type="button"
+            class="menu-toggle"
+            id="menuToggle"
+            aria-expanded="false"
+            aria-controls="mobileNav"
+            aria-label="Abrir menu de navegação"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="3" y1="7" x2="21" y2="7" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="17" x2="21" y2="17" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-nav" id="mobileNav" aria-label="Navegação móvel" hidden>
+        <a href="#servicos" class="mobile-nav-link">Serviços</a>
+        <a href="#projetos" class="mobile-nav-link">Projetos</a>
+        <a href="#sobre" class="mobile-nav-link">Sobre</a>
+        <a href="#contato" class="mobile-nav-link">Contato</a>
+        <a href="#contato" class="btn btn-primary mobile-cta">Solicitar Orçamento</a>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">São Paulo · Design &amp; Web</p>
+            <h1 class="hero-title">Sites claros, rápidos e construídos para gerar resultado.</h1>
+            <p class="hero-description">
+              Projetamos interfaces sob medida e páginas institucionais em código limpo para empresas que precisam comunicar com objetividade e converter visitantes em clientes.
+            </p>
+            <div class="hero-actions">
+              <a href="#contato" class="btn btn-primary">Solicitar Orçamento</a>
+              <a href="#projetos" class="btn-text-link">Ver projetos recentes</a>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <div class="media-frame media-hero">
+              <img
+                src="/src/assets/images/hero_studio_workspace_1795619000776.jpg"
+                alt="Espaço de trabalho do Estúdio Vereda com mesa de carvalho e luz natural"
+                referrerpolicy="no-referrer"
+              />
+              <div class="media-fallback" aria-hidden="true">
+                <span>Estúdio Vereda · Espaço de Criação</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicos" class="section section-bordered">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Capacidades</p>
+            <h2 class="section-title">Do planejamento visual ao código em produção</h2>
+          </div>
+
+          <div class="services-bento">
+            <article class="surface-card service-featured">
+              <span class="service-index">01</span>
+              <h3 class="card-title">Sites Institucionais e Landing Pages</h3>
+              <p class="card-text">
+                Estruturamos páginas focadas em leitura rápida, hierarquia clara de conteúdo e carregamento instantâneo em qualquer dispositivo.
+              </p>
+              <p class="meta-line">HTML Semântico · CSS Moderno · Performance</p>
+            </article>
+
+            <article class="surface-card">
+              <span class="service-index">02</span>
+              <h3 class="card-title">Identidade Visual Digital</h3>
+              <p class="card-text">
+                Tipografia, paleta cromática e sistema de componentes consistentes para sua marca se destacar sem excessos.
+              </p>
+              <p class="meta-line">Tipografia · Direção de Arte · Guia de Estilo</p>
+            </article>
+
+            <article class="surface-card">
+              <span class="service-index">03</span>
+              <h3 class="card-title">Interatividade em JavaScript</h3>
+              <p class="card-text">
+                Filtros dinâmicos, formulários validados e navegação acessível sem dependência de bibliotecas pesadas.
+              </p>
+              <p class="meta-line">Acessibilidade · Validação · Código Limpo</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos" class="section section-bordered">
+        <div class="container">
+          <div class="projects-header">
+            <div>
+              <p class="eyebrow">Casos Recentes</p>
+              <h2 class="section-title">Projetos com impacto mensurável</h2>
+            </div>
+
+            <div class="filter-bar" role="group" aria-label="Filtrar projetos por categoria">
+              <button type="button" class="filter-btn is-active" data-filter="todos" aria-pressed="true">
+                Todos
+              </button>
+              <button type="button" class="filter-btn" data-filter="websites" aria-pressed="false">
+                Websites
+              </button>
+              <button type="button" class="filter-btn" data-filter="identidade" aria-pressed="false">
+                Identidade
+              </button>
+            </div>
+          </div>
+
+          <div class="projects-grid" id="projectsGrid">
+            <article class="project-card" data-category="websites">
+              <div class="media-frame media-card">
+                <img
+                  src="/src/assets/images/project_ceramic_atelier_1795618999717.jpg"
+                  alt="Peças artesanais de cerâmica da Casa Argila sobre pedra natural"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="media-fallback" aria-hidden="true">
+                  <span>Casa Argila</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <p class="meta-line">Websites · 2026 · +135% em pedidos de orçamento</p>
+                <h3 class="card-title">Casa Argila Cerâmica</h3>
+                <p class="card-text">
+                  Catálogo digital leve com carregamento abaixo de 1 segundo e formulário direto para encomendas sob medida.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="identidade">
+              <div class="media-frame media-card">
+                <img
+                  src="/src/assets/images/project_coffee_roastery_1795619000282.jpg"
+                  alt="Embalagens minimalistas de café especial da Torrefação Serra"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="media-fallback" aria-hidden="true">
+                  <span>Torrefação Serra</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <p class="meta-line">Identidade · 2026 · +48% de recorrência mensal</p>
+                <h3 class="card-title">Torrefação Serra</h3>
+                <p class="card-text">
+                  Sistema visual completo de embalagens e guia de assinatura digital para cafés especiais de origem única.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="websites">
+              <div class="media-frame media-card">
+                <img
+                  src="/src/assets/images/project_pavilion_interior_1795619001638.jpg"
+                  alt="Interior de pavilhão residencial em concreto e madeira do escritório Arq. Norte"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="media-fallback" aria-hidden="true">
+                  <span>Arq. Norte</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <p class="meta-line">Websites · 2025 · 3,2x mais reuniões agendadas</p>
+                <h3 class="card-title">Arq. Norte Arquitetura</h3>
+                <p class="card-text">
+                  Portfólio editorial com galeria responsiva e apresentação detalhada de projetos residenciais em 6 meses.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="section section-bordered">
+        <div class="container contact-grid">
+          <div class="about-block">
+            <p class="eyebrow">Sobre o Estúdio</p>
+            <h2 class="section-title">Menos ruído, mais clareza em cada tela</h2>
+            <p class="card-text">
+              Acreditamos que bons sites não precisam de animações exageradas ou menus confusos. Trabalhamos com times enxutos para entregar páginas legíveis, acessíveis e fáceis de evoluir.
+            </p>
+
+            <dl class="metrics-list">
+              <div class="metric-item">
+                <dt>Prazo médio de entrega</dt>
+                <dd class="tabular">3 semanas</dd>
+              </div>
+              <div class="metric-item">
+                <dt>Projetos entregues</dt>
+                <dd class="tabular">42</dd>
+              </div>
+              <div class="metric-item">
+                <dt>Pontuação média de performance</dt>
+                <dd class="tabular">99 / 100</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div id="contato" class="surface-card form-card">
+            <h2 class="card-title">Solicitar Orçamento</h2>
+            <p class="card-text">Preencha os campos abaixo e retornaremos em até 1 dia útil.</p>
+
+            <form id="contactForm" novalidate>
+              <div class="field">
+                <label for="nameInput">Nome completo</label>
+                <input
+                  id="nameInput"
+                  name="name"
+                  type="text"
+                  placeholder="Ex.: Mariana Souza"
+                  autocomplete="name"
+                  required
+                />
+                <p class="field-error" id="nameError" role="alert" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="emailInput">E-mail profissional</label>
+                <input
+                  id="emailInput"
+                  name="email"
+                  type="email"
+                  placeholder="mariana@empresa.com.br"
+                  autocomplete="email"
+                  required
+                />
+                <p class="field-error" id="emailError" role="alert" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="messageInput">Sobre o projeto</label>
+                <textarea
+                  id="messageInput"
+                  name="message"
+                  rows="4"
+                  placeholder="Conte brevemente o objetivo do site e o prazo desejado."
+                  required
+                ></textarea>
+                <p class="field-error" id="messageError" role="alert" hidden></p>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">Enviar Mensagem</button>
+            </form>
+
+            <div class="form-success" id="formSuccess" role="status" hidden>
+              <p class="success-title">Mensagem enviada com sucesso</p>
+              <p class="success-text" id="successSummary"></p>
+              <button type="button" class="btn btn-secondary" id="resetFormBtn">
+                Enviar nova mensagem
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span class="footer-brand">Estúdio Vereda</span>
+        <p class="footer-copy">© 2026 Estúdio Vereda · São Paulo, Brasil</p>
+        <div class="footer-links">
+          <a href="#servicos">Serviços</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contato">Contato</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

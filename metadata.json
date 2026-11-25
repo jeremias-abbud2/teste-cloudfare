@@ -1,0 +1,8 @@
+{
+  "name": "Estúdio Vereda",
+  "description": "Site simples em HTML, CSS e JavaScript para o Estúdio Vereda, especializado em design digital e desenvolvimento web.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
